@@ -1,8 +1,10 @@
-import React from 'react'
+import '../Styles/Styles.sass'
 
 const Navigation = () => {
   return (
-    <div>Navigation</div>
+    <div>
+        <h1>test</h1>
+    </div>
   )
 }
 

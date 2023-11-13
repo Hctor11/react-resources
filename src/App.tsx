@@ -1,10 +1,11 @@
 import './App.css'
+import Navigation from './components/Navigation/Navigation'
 
 function App() {
 
   return (
     <>
-    <h1>death classic</h1>
+    <Navigation/>
     </>
   )
 }
