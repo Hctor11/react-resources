@@ -1,8 +1,13 @@
+import icon from '/icon1.svg';
+
 const Sections = () => {
   return (
     <div>
       <details className="dropdown">
-        <summary className="m-1 btn">Categories</summary>
+        <summary className="m-1 btn">
+            Categories 
+            <img src={icon} alt="" />
+        </summary>
         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
           <li>
             <a>UI Components</a>

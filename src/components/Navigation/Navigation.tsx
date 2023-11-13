@@ -5,13 +5,13 @@ import Sections from "./Sections";
 
 const Navigation = () => {
   return (
-    <div className="navigation">
+    <div className="navigation items-center px-4 shadow-lg backdrop-blur-sm">
       <Link to="/" className="link">
         <img src={iso} alt="iso" className="iso" />
       </Link>
 
-      <div className="right-side">
-        <Sections />
+      <div className="right-side gap-3">
+        <Sections/>
         <Link to="/about" className="btn link">
           About
         </Link>
