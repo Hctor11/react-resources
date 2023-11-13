@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
+import AboutPage from './components/AboutPage.tsx'
+import ErrorPage from './components/ErrorPage.tsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -11,7 +13,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
   },
+  {
+    path: "/about",
+    element: <AboutPage />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
