@@ -1,4 +1,5 @@
 import './App.css'
+import './components/Styles/Styles.sass'
 import Navigation from './components/Navigation/Navigation'
 
 function App() {
@@ -6,8 +7,8 @@ function App() {
   return (
     <>
     <Navigation/>
-    
     </>
+
   )
 }
 
