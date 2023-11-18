@@ -1,4 +1,4 @@
 
-const CATEGORIES : string [] = ["UI components","3D tools","Animation","Statistics","Icons","SaaS"]
+export const CATEGORIES : string [] = ["UI components","3D tools","Statistics","Statistics","Icons","SaaS"]
 
-export default CATEGORIES
+export const TYPES : string[] = ["Free", "Premium", "Freemium"]
