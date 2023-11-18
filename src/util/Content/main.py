@@ -16,7 +16,8 @@ for index, row in df.iterrows():
         'name': row['name'], 
         'link': row['link'],   
         'category': f'CATEGORIES[{list(objetos_por_categoria.keys()).index(categoria)}]',  
-        'image': f'image-{index}'
+        'image': f'./{categoria}/image-{index}.png',
+        'type': 'TYPES[0]' if row['Type'] == 'Free' else 'TYPES[1]' if row['Type'] == 'Premium' else 'TYPES[2]',
     }
     
     objetos_por_categoria[categoria].append(objeto_js)
