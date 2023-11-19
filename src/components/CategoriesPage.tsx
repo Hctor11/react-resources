@@ -1,9 +1,14 @@
+import Navigation from "./Navigation/Navigation";
+
 const CategoriesPage = () => {
   return (
     <div>
-        <h1>This is a category page</h1>
+      <Navigation />
+      <h1 className="text-3xl font-bold underline p-52 text-center">
+        Hello world, this is category page!
+      </h1>
     </div>
-  )
-}
+  );
+};
 
-export default CategoriesPage
+export default CategoriesPage;

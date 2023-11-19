@@ -1,4 +1,5 @@
 import icon from '/icon1.svg';
+import { Link } from 'react-router-dom';
 
 const Sections = () => {
   return (
@@ -10,10 +11,10 @@ const Sections = () => {
         </summary>
         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
           <li>
-            <a>UI Components</a>
+            <Link to='/components'>UI Components</Link>
           </li>
           <li>
-            <a>3D tools</a>
+            <Link to='/tools'>3D tools</Link>
           </li>
         </ul>
       </details>
