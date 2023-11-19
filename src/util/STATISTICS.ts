@@ -123,14 +123,14 @@ const STATISTICS: {
     name: "p5js",
     link: "https://p5js.org/",
     category: CATEGORIES[2],
-    image: "./Charts/image-51.png",
+    image: "./Charts/image-44.png",
     type: TYPES[0],
   },
   {
     name: "ChartJs",
     link: "https://www.chartjs.org/",
     category: CATEGORIES[2],
-    image: "./Charts/image-60.png",
+    image: "./Charts/image-44.png",
     type: TYPES[0],
   },
 ];

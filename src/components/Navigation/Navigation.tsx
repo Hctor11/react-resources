@@ -5,7 +5,7 @@ import Sections from "./Sections";
 
 const Navigation = () => {
   return (
-    <div className="navigation fixed z-50 w-full md:w-11/12 md:m-10 items-center px-4 bg backdrop-blur-sm">
+    <div className="navigation fixed z-50 w-full md:w-11/12 md:m-10 items-center px-4 bg-white bg-opacity-20 backdrop-blur">
       <Link to="/" className="link">
         <img src={iso} alt="iso" className="iso" />
       </Link>
