@@ -3,8 +3,13 @@ import "./components/Styles/Styles.sass";
 import Navigation from "./components/Navigation/Navigation";
 import ButtonCollection from "./components/Buttons/ButtonCollection";
 import gradient from "/gradient.svg";
+import Carousel from "./components/Carousel/Carousel";
+
+import ICONS from "./util/ICONS";
 
 function App() {
+
+
   return (
     <>
       <img src={gradient} alt="ss" className="fixed" />
@@ -14,7 +19,7 @@ function App() {
           The Best React Resources in One Place
         </h1>
         <ButtonCollection />
-        
+        <Carousel content={ICONS} />
       </header>
     </>
   );
