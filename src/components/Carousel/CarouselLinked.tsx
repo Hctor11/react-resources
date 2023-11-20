@@ -7,11 +7,11 @@ const CarouselLinked = (props: {
   title: string;
 }) => {
   return (
-    <div>
-      <Link to={props.page}>
-        <h3 className="text-3xl font-bold underline p-52 text-center">
+    <div className="mt-20">
+      <Link to={props.page} target="_blank" rel="noreferrer">
+        <p className="text-2xl font-bold underline m-10 mt-20 inline text-left">
             {props.title}
-        </h3>
+        </p>
       </Link>
       <Carousel content={props.content} />
     </div>

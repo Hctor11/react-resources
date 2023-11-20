@@ -3,7 +3,7 @@ import "./components/Styles/Styles.sass";
 import Navigation from "./components/Navigation/Navigation";
 import ButtonCollection from "./components/Buttons/ButtonCollection";
 import gradient from "/gradient.svg";
-import Carousel from "./components/Carousel/Carousel";
+import CarouselLinked from "./components/Carousel/CarouselLinked";
 
 import ICONS from "./util/ICONS";
 
@@ -19,7 +19,7 @@ function App() {
           The Best React Resources in One Place
         </h1>
         <ButtonCollection />
-        <Carousel content={ICONS} />
+        <CarouselLinked content={ICONS} title="Icons" page="/components" />
       </header>
     </>
   );

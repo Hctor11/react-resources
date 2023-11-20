@@ -17,14 +17,29 @@ const Carousel = (props: {
       >
         {props.content.map((item) => {
           return (
-            <SwiperSlide key={item.name} className="my-10">
-              <div className="card w-45 bg-base-100 shadow-xl">                  
+            <SwiperSlide key={item.name}>
+              <div className="card w-45 bg-base-100 mt-2 mb-10 shadow-xl transition duration-150 ease-in-out hover:opacity-80 hover:scale-[1.01]">
                 <a href={item.link} target="_blank" rel="noreferrer">
                   <figure>
-                    <img src={item.image} alt="image" className="h-100 w-fit rounded-xl" />
+                    <img
+                      src={item.image}
+                      alt="image"
+                      className="h-100 w-fit rounded-xl"
+                    />
                   </figure>
-                  <div className="card-body">
+                  <div className="p-4 flex justify-between items-center">
                     <h2 className="text-lg">{item.name}</h2>
+                    <p
+                      className={`badge ${
+                        item.type == "Free"
+                          ? "badge-accent"
+                          : item.type == "Fremium"
+                          ? "badge-primary"
+                          : "badge-warning"
+                      }`}
+                    >
+                      {item.type}
+                    </p>
                   </div>
                 </a>
               </div>
