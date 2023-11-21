@@ -39,7 +39,7 @@ const TOOLS3D: {
     name: "React Three Fiber",
     link: "https://docs.pmnd.rs/react-three-fiber/getting-started/introduction",
     category: CATEGORIES[3],
-    image: "./3D Tools/image-5.png",
+    image: "./3DTools/image-5.png",
     type: TYPES[0],
   },
   {
