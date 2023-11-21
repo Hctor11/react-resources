@@ -6,6 +6,7 @@ import gradient from "/gradient.svg";
 import CarouselLinked from "./components/Carousel/CarouselLinked";
 
 import ICONS from "./util/ICONS";
+import UICOMPONENTS from "./util/UICOMPONENTS";
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
         </h1>
         <ButtonCollection />
         <CarouselLinked content={ICONS} title="Icons" page="/components" />
+        <CarouselLinked content={UICOMPONENTS} title="UI Components" page="/components" />
+
       </header>
     </>
   );

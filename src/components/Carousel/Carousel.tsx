@@ -7,7 +7,7 @@ const Carousel = (props: {
   content: { name: string; image: string; link: string; type: string }[];
 }) => {
   return (
-    <div className="my-10">
+    <div className="my-5">
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -18,7 +18,7 @@ const Carousel = (props: {
         {props.content.map((item) => {
           return (
             <SwiperSlide key={item.name}>
-              <div className="card w-45 bg-base-100 mt-2 mb-10 shadow-xl transition duration-150 ease-in-out hover:opacity-80 hover:scale-[1.01]">
+              <div className="card w-45 bg-base-100 mt-1 mb-10 shadow-xl transition duration-150 ease-in-out hover:opacity-80 hover:scale-[1.01]">
                 <a href={item.link} target="_blank" rel="noreferrer">
                   <figure>
                     <img
@@ -33,7 +33,7 @@ const Carousel = (props: {
                       className={`badge ${
                         item.type == "Free"
                           ? "badge-accent"
-                          : item.type == "Fremium"
+                          : item.type == "Freemium"
                           ? "badge-primary"
                           : "badge-warning"
                       }`}
