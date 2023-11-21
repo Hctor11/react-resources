@@ -1,3 +1,5 @@
+![](./public/header.png)
+
 # React Resources
 
 Welcome to the **React Resources** repository – your one-stop destination for curated and valuable resources to master React development! 🚀
@@ -17,14 +19,12 @@ Let's work together to make React Resources the go-to hub for React developers w
 
 ## Development
 
-This project is built with React, ensuring a modern and scalable codebase. If you're interested in contributing to the development, check out the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
+This project is built with React Vite with TypeScript, for styles I use Tailwind CSS and also I use Pandas to tranform .cvs content to a JavaScript Object.
+
+![](./public/tools.svg)
 
 ## Feedback
 
-We value your feedback! If you have suggestions, encounter issues, or want to express appreciation, feel free to open an issue or reach out to us.
+ Any feedback is awesome! If you have suggestions, encounter issues, or want to express appreciation, feel free to open an issue or reach out to me.
 
 Happy coding! 🚀
-
----
-
-Feel free to customize this description according to your project's specific features and goals!

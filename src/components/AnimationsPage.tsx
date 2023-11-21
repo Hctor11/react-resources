@@ -7,7 +7,7 @@ import ANIMATION from "../util/ANIMATION"
 const AnimationsPage = () => {
   return (
     <div>
-       <Navigation />
+      <Navigation />
       <h1 className="text-3xl pt-32 p-0 md:pt-32 text-center font-semibold">
         Animations
       </h1>
