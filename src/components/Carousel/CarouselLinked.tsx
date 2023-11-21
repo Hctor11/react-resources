@@ -6,6 +6,11 @@ const CarouselLinked = (props: {
   page: string;
   title: string;
 }) => {
+
+  const generateRandomNumber = (min: number, max: number):number => {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+
   return (
     <div className="mt-20">
       <Link to={props.page} target="_blank" rel="noreferrer">
@@ -13,7 +18,7 @@ const CarouselLinked = (props: {
             {props.title}
         </p>
       </Link>
-      <Carousel content={props.content} />
+      <Carousel content={props.content} autoPlayDelay={generateRandomNumber(2000,3000)}/>
     </div>
   );
 };

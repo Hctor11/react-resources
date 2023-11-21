@@ -2,11 +2,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import Card from "./Card";
 
 const Carousel = (props: {
   content: { name: string; image: string; link: string; type: string }[];
+  autoPlayDelay: number;
 }) => {
   const [screenSize, setScreenSize] = useState(getCurrentDimension());
 
@@ -31,11 +32,21 @@ const Carousel = (props: {
   return (
     <div className="my-5">
       <Swiper
-        slidesPerView={screenSize.width < 500 ? 1 : (screenSize.width < 550 && screenSize.width > 500) ? 2 : 3}
+        slidesPerView={
+          screenSize.width < 500
+            ? 1
+            : screenSize.width < 550 && screenSize.width > 500
+            ? 2
+            : 3
+        }
         spaceBetween={30}
         loop={true}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
+        autoplay={{
+          delay: props.autoPlayDelay,
+          disableOnInteraction: false,
+        }}
       >
         {props.content.map((item) => {
           return (
