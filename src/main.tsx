@@ -51,7 +51,9 @@ const router = createBrowserRouter([
     path: '/icons',
     element: < IconsPage/>,
   }
-]);
+], {
+  basename: '/react-resources'
+});
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
