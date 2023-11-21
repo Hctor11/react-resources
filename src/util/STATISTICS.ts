@@ -61,7 +61,7 @@ const STATISTICS: {
     link: "https://mui.com/x/react-charts/",
     category: CATEGORIES[2],
     image: "./Charts/image-8.png",
-    type: "TYPES[0]",
+    type: TYPES[0],
   },
   {
     name: "Victory",

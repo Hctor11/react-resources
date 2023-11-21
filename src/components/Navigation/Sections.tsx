@@ -16,6 +16,15 @@ const Sections = () => {
           <li>
             <Link to='/tools'>3D tools</Link>
           </li>
+          <li>
+            <Link to='/animations'>Animations</Link>
+          </li>
+          <li>
+            <Link to='/charts'>Charts</Link>
+          </li>
+          <li>
+            <Link to='/icons'>Icons</Link>
+          </li>
         </ul>
       </details>
     </div>
