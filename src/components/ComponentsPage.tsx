@@ -1,6 +1,8 @@
 import Navigation from "./Navigation/Navigation";
 import Buttons from "./Buttons/Buttons";
-// import UICOMPONENTS from "../util/UICOMPONENTS";
+import UICOMPONENTS from "../util/UICOMPONENTS";
+import Grid from "./Grid/Grid";
+import Footer from "./Footer/Footer";
 
 const ComponentsPage = () => {
   return (
@@ -21,10 +23,9 @@ const ComponentsPage = () => {
         <Buttons name="Icons" section="icons" color="" />
       </div>
       <main>
-        <div className="grid">
-
-        </div>
+        <Grid Content={UICOMPONENTS} />
       </main>
+      <Footer/>
     </div>
   );
 };

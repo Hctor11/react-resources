@@ -6,6 +6,10 @@ import ErrorPage from './components/ErrorPage.tsx'
 import CategoriesPage from './components/CategoriesPage.tsx'
 import ComponentsPage from './components/ComponentsPage.tsx'
 import ThreeDToolsPage from './components/ThreeDToolsPage.tsx'
+import AnimationsPage from './components/AnimationsPage.tsx'
+import ChartsPage from './components/ChartsPage.tsx'
+import IconsPage from './components/IconsPage.tsx'
+
 import './index.css'
 import {
   createBrowserRouter,
@@ -34,6 +38,18 @@ const router = createBrowserRouter([
   {
     path: '/tools',
     element: < ThreeDToolsPage/>,
+  },
+  {
+    path: '/animations',
+    element: < AnimationsPage/>,
+  },
+  {
+    path: '/charts',
+    element: < ChartsPage/>,
+  },
+  {
+    path: '/icons',
+    element: < IconsPage/>,
   }
 ]);
 

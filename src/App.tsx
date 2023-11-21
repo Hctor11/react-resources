@@ -15,8 +15,8 @@ import STATISTICS from "./util/STATISTICS";
 function App() {
   return (
     <>
-      <img src={gradient} alt="ss" className="fixed" />
-      <header className="relative z-10">
+      <img src={gradient} alt="ss" className="absolute inline-flex z-1" />
+      <header className="relative top-0 left-0 z-10">
         <Navigation />
         <h1 className="text-3xl pt-32 p-0 md:pt-52 text-center font-semibold">
           The Best React Resources in One Place

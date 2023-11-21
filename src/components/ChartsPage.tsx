@@ -1,26 +1,31 @@
 import STATISTICS from "../util/STATISTICS"
+import Navigation from "./Navigation/Navigation"
+import Buttons from "./Buttons/Buttons"
+import Grid from "./Grid/Grid"
+import Footer from "./Footer/Footer"
 
 const ChartsPage = () => {
   return (
     <div>
-        <div className="grid grid-cols-2 gap-4 ">
-          {
-            STATISTICS.map((item, index) => {
-              return (
-                <div key={index} className="card w-96 bg-base-100 shadow-xl">
-                  <a href={item.link} target="_blank" rel="noreferrer">
-                    <figure>
-                      <img src={item.image} alt="image" className="h-100 w-96" />
-                    </figure>
-                    <div className="card-body">
-                    <h2>{item.name}</h2>
-                    </div>
-                  </a>
-                </div>
-              )
-            })
-          }
-        </div>
+         <Navigation />
+      <h1 className="text-3xl pt-32 p-0 md:pt-32 text-center font-semibold">
+        Chart Components
+      </h1>
+      <div className="flex flex-wrap justify-center gap-2 mx-auto my-5">
+        <Buttons
+          name="UI Components"
+          section="components"
+          color=""
+        />
+        <Buttons name="3D tools" section="tools" color="" />
+        <Buttons name="Animations" section="animations" color="" />
+        <Buttons name="Charts" section="charts" color="btn-disabled" />
+        <Buttons name="Icons" section="icons" color="" />
+      </div>
+      <main>
+        <Grid Content={STATISTICS} />
+      </main>
+      <Footer/>
     </div>
   )
 }
